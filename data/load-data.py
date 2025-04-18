@@ -4,7 +4,7 @@ from IPython.display import display
 import os
 
 # Load the Parquet file
-metadata_path_parquet = "data/metadata.parquet"
+metadata_path_parquet = "metadata.parquet"
 df_metadata = pd.read_parquet(metadata_path_parquet)
 
 # Display the first 5 rows of the DataFrame
