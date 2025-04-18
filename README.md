@@ -2,7 +2,7 @@
 <!-- # **VLDBench: Vision Language Models Disinformation Detection Benchmark** -->
 
 <p align="center">
-  <img src="static/images/architecture.png" alt="VLDBench Pipeline" width="70%">
+  <img src="docs/static/images/architecture.png" alt="VLDBench Pipeline" width="70%">
 </p>
 
 
