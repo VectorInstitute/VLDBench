@@ -26,7 +26,7 @@ With the increasing impact of **Generative AI** in shaping digital narratives, d
 
 ### **Key Features:**
 - **Curated from 58 news sources** (e.g., CNN, NYT, Wall Street Journal)
-- **Human-AI collaborative annotation** with **Cohen’s κ = 0.82**
+- **Human-AI collaborative annotation** with **Cohen’s κ = 0.78**
 - **Unimodal (text-only) and Multimodal (text + image) classification**
 - **Benchmarking of top LLMs & VLMs**
 
