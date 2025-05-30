@@ -149,19 +149,22 @@
     <div class="container is-max-desktop">
       <div class="hero-body">
         <p align="justify">
-          Motivated by the growing influence of Generative AI in shaping digital narratives and the critical need to combat disinformation, we present the Vision-Language Disinformation Detection Benchmark <b><i>(VLDBench)</i></b>. This comprehensive benchmark empowers researchers to evaluate and enhance the capabilities of AI systems in detecting multimodal disinformation, addressing the unique challenges posed by the interplay of textual and visual content. By bridging gaps in existing benchmarks, VLDBench sets the stage for building safer, more transparent, and equitable AI models that safeguard public trust in digital platforms.</p>
+          Disinformation in the age of generative AI is no longer confined to isolated claims or doctored images; it increasingly manifests as complex, multimodal narratives that mimic credible journalism. <b><i>VLDBench</i></b> addresses this challenge by offering the first large-scale, human-verified benchmark for disinformation detection spanning both text-only and image-text formats. Built in alignment with global AI governance standards, it serves as a resource for evaluating model reliability, robustness, and interpretability across real-world scenarios.</p>
         <!-- <br> -->
 
         <div class="column">
           <div style="text-align:center;">
             <!-- <h4 class="subtitle has-text-centered"> -->
-            <img src="static/images/example_page-0001.jpg" style="max-width:50%">
+            <img src="static/images/Framework.jpg" style="max-width:100%">
             <!-- </h4> -->
 
             <div class="content has-text-justified">
               <p align="justify"> <b> <span>Figure</span></b>:
-                Visual & Textual Disinformation Example: Amplifying fear (left: false biohazard imagery) and controversy (gender biases in sports), distorting perception through fabricated associations and emotional manipulation.
+                <i>VLDBench Framework</i> system comprises five stages: (1) Define Task – formalizing the detection objective; (2) Data Pipeline – curating and preprocessing real-world multimodal news content; (3) Annotation Pipeline – generating labels via human and LLM-assisted review; (4) Human Review – validating annotations through expert oversight; and (5) Benchmarking – evaluating models for accuracy, reasoning, and risk mitigation across fine-tuning, zero-shot, and robustness scenarios.
               </p>
+              <!-- <p align="justify"> <b> <span>Figure</span></b>: -->
+                <!-- Disinformation Example: Protesters holding “DECOLONIZE THIS MUSEUM” signs claim the museum perpetuates colonialism without evidence—an instance of likely disinformation -->
+              <!-- </p> -->
             </div>
           </div>
         </div>
@@ -181,7 +184,7 @@
           <p>
             <p>
               <p>
-                The rise of AI-generated content has amplified the challenge of detecting <i>multimodal disinformation</i>—i.e., online posts/articles that contain images and texts with fabricated information, specifically designed to deceive. While prior AI safety benchmarks focus on bias and toxicity, multimodal disinformation detection remains underexplored. To address this challenge, we present the <b>Vision-Language Disinformation Detection Benchmark <i>(VLDBench)</i></b>, the first comprehensive benchmark for detecting disinformation across both unimodal (text-only) and multimodal (text and image) content, comprising <b>31,000</b> news article-image pairs, spanning 13 distinct categories, for robust evaluation. <b><i>VLDBench</i></b> features a rigorous semi-automated data curation pipeline, with 22 domain experts dedicating <b>300+ hours</b> to annotate the entire 31k samples, achieving a strong inter-annotator agreement (Cohen’s &kappa; = 0.78). We extensively evaluate state-of-the-art Large Language Models (LLMs) and Vision-Language Models (VLMs), demonstrating that integrating textual and visual cues in multimodal news posts improves disinformation detection accuracy by 5&ndash;35% compared to unimodal models. Developed in alignment with AI governance frameworks such as the EU AI Act, NIST guidelines, and the MIT AI Risk Repository 2024, <b><i>VLDBench</i></b> is expected to become a benchmark for detecting disinformation in online multi-modal content.
+                Dtecting disinformation that blends manipulated text and images has become increasingly challenging, as AI tools make synthetic content easy to generate and disseminate. While most existing AI-safety benchmarks focus on single-modality misinformation (i.e., false content shared without intent to deceive), intentional multimodal disinformation—such as propaganda or conspiracy theories that imitate credible news—remains largely unaddressed. In this work, we introduce the Vision-Language Disinformation Detection Benchmark (<b><i>VLDBench</i></b>), the first large-scale resource supporting both unimodal (text-only) and multimodal (text + image) disinformation detection. <i>VLDBench</i> comprises approximately <b>62,000</b> labeled text–image pairs across 13 categories, curated from 58 news outlets. Using a semi-automated pipeline followed by expert review, 22 domain experts invested over <b>500 hours</b> to produce high-quality annotations with substantial inter-annotator agreement. Evaluation of state-of-the-art Large Language Models (LLMs) and Vision-Language Models (VLMs) on <i>VLDBench</i> shows that incorporating visual cues improves detection accuracy by 5 to 35 percentage points over text-only baselines. We provide instruction-tuning splits and robustness tests to support training, evaluation, and disinformation analysis. Developed in alignment with the EU AI Act, NIST guidelines, and the MIT AI Risk Repository, VLDBench offers a principled foundation for advancing trustworthy disinformation detection in multimodal media.
                 </p>
                 <br>
           </p>
@@ -200,17 +203,15 @@
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3"><i>VLDBench</i> is the largest and most comprehensive humanly verified disinformation
-            detection benchmark with over 300 hours of human verification.</h2>
           <div class="content has-text-justified">
             <p>
             <h5> <b> Main contributions: </b></h5>
             <ol>
-              <li> <b>VLDBench: </b> Human-verified multimodal benchmark for disinformation detection. Curated from 58 diverse news sources, it contains 31.3k news article-image pairs spanning 13 distinct categories. </li>
-              <li><b>Expert Annotation: </b>Curated by 22 domain experts over 300+ hours, achieving high label accuracy
-                (Cohen’s κ = 0.78).</li>
-              <li><b>Model Benchmarking: </b>Evaluates LLMs and VLMs, identifying performance gaps and areas for improvement in addressing the challenges of multimodal disinformation in various contexts.</li>
 
+              <li> <b>VLDBench: </b>We present VLDBench, the largest human-verified benchmark for disinformation detection in both unimodal and multimodal settings. It contains 31.3K news articles with paired images, sourced from 58 outlets and spanning 13 categories, all collected under rigorous ethical guidelines.
+              <li><b>Task coverage: </b>VLDBench offers 62K labeled instances supporting two evaluation formats: (i) binary classification for text or text-image pairs and (ii) open-ended multimodal reasoning.</li>
+              <li><b>Expert annotation quality: </b>Twenty-two domain experts devoted more than 500 hours to annotation, yielding substantial agreement (Cohen’s κ = 0.78) and ensuring high data reliability.</li>
+              <li><b>Comprehensive benchmarking: </b>We evaluate nineteen state-of-the-art open-source models (ten vision–language models and nine language models) on VLDBench, exposing systematic performance gaps and model-specific failure modes that inform responsible-AI governance and risk monitoring.</li>
             </ol>
             </p>
           </div>
@@ -234,26 +235,29 @@
 
           <div class="content has-text-justified">
             <p>VLDBench is a comprehensive classification multimodal benchmark for disinformation detection in news articles. We categorized our data into 13 unique news categories by providing image-text pairs to GPT-4o.</p>
-            <div class="content has-text-centered"><img src="static/images/ComparisonDatasets.png"  style="max-width:80%">
-              <p class="content has-text-justified"> <b> <span>Table</span></b>: Comparison of VLDBench with contemporary datasets.</p>
+            <div class="content has-text-centered"><img src="static/images/DatasetComparison.jpg"  style="max-width:80%">
+              <p class="content has-text-justified"> <b> <span>Table</span></b>: Comparison of <strong>VLDBench</strong> with contemporary datasets. The <em>Annotation</em> (<span style="color:blue;">👤</span>) means Manual and (<span style="color:blue;">👤</span>,<span style="color:#c2185b;">⚙️</span>) indicates Hybrid (Human+AI).
+                <em>Access</em> (<span style="color:green;">✔️</span>) refers to open-source and (<span style="color:red;">❗</span>) indicates Request required. The <em>Real</em> is defined as (<span style="color:green;">✔️</span>) if it’s real-world data and (<span style="color:red;">❌</span>) if it’s Synthetic data.
+                <sup>*</sup><strong>Multiple</strong> includes <em>Politics, National, Business &amp; Finance, International, Local/Regional, Entertainment, Opinion/Editorial, Health, Other, Sports, Technology, Weather &amp; Environment, Science</em>.
+              </p>
             </div>
             
             <!-- <br><br> -->
           </div>
-          <div class="content has-text-justified">
-            <p>
+          <!-- <div class="content has-text-justified"> -->
+            <!-- <p> -->
               <!-- <b> <span style="color: blue;">SB-Bench</span></b> comprises of nine social bias categories. -->
-            <div class="content has-text-centered">
+            <!-- <div class="content has-text-centered">
               <img src="static/images/news_categories_distribution_page-0001.jpg" style="max-width:80%">
-              <p class="content has-text-justified"><b> <span>Figure</span></b>: Category distribution with overlaps. Total unique articles = 31,339. Percentages sum to > 100% due to multi-category articles.</p>
+              <p class="content has-text-justified"><b> <span>Figure</span></b>: Category distribution with overlaps. Total unique articles = 31,339. Percentages sum to > 100% due to multi-category articles.</p> -->
               <!-- <img src="static/images/outlet_distribution.jpg" style="max-width:100%">
               <p class="content has-text-justified">
                 Distribution of Articles Across Various News Outlets. This bar chart illustrates the number
                 of articles published by each outlet in our dataset, highlighting the predominant sources of news
                 coverage.
               </p> -->
-            </div>
-          </div>
+            <!-- </div> -->
+          <!-- </div> -->
           
 
         </div>
@@ -290,44 +294,18 @@
                   ensuring diverse pairwise representations.</p>
               </div> -->
 
-
+<!-- 
               <div class="content has-text-justified">
                 <h3 class="title is-4 has-text-justified">Data Statistics</h3>
-
-                <p align="justify"> Data comprises 31,339 articles and visual samples curated from 58 news sources ranging from the Financial Times, CNN, and New York Times to Axios and Wall Street Journal. VLDBench spans 13 unique categories: National, Business and Finance,International, Entertainment, Local/Regional, Opinion/Editorial, Health, Sports, Politics, Weather and Environment, Technology, Science, and Other -adding depth to the disinformation domains. </p>
-              </div>
+              </div> -->
 
 
               <div class="content has-text-justified">
                 <div class="content has-text-centered">
-                  <img src="static/images/key_dataset_statistics.png" style="max-width:50%">
+                  <img src="static/images/SummaryStats.jpg" style="max-width:70%">
                 </div>
-                <p align="justified"> <b> <span>Figure</span></b>: Key Dataset Statistics</p>
+                <p align="justified"> <b> <span>Figure</span></b>: Summary statistics for VLDBench. Each article is annotated twice, once as text-only and once as text +image, yielding 62,678 labelled instances.</p>
               </div>
-            </div>
-          <h2 class="title is-3 has-text-centered">Three-Stage Pipeline</h2>
-            <img src="static/images/architecture.png">
-            <!-- </h4> -->
-
-            <div class="content has-text-justified">
-              <p align="justify"> <b> <span>Figure</span></b>:
-                <i>VLDBench</i> is a multimodal disinformation detection framework, focusing on LLM/VLM benchmarking,
-                human-AI collaborative annotation, and risk mitigation. It operates through a three-stage
-                pipeline: (1) Data (collection, filtering, and quality assurance of text-image pairs), (2) Annotation
-                (GPT4 labeling with human validation), (3) Benchmarking (prompt-based evaluation and robustness
-                testing).
-              </p>
-            </div>
-
-            <div class="content has-text-justified">
-              <h3 class="title is-4 has-text-justified">Data </h3>
-              <p align="justify">
-                The collected dataset underwent a rigorous processing pipeline, including quality checks to remove incomplete or low-quality entries, duplicates, and irrelevant URLs. Articles were selected based on textual depth and image quality, with curated text-image news articles moved to the annotation phase for further analysis and model training.
-              </p>
-              
-              <h3 class="title is-4 has-text-justified">Annotation</h3>
-            
-              <p align="justify"> After quality assurance, each article was classified by GPT-4o as either Likely or Unlikely to contain disinformation, with text-image alignment assessed three times per sample to ensure accuracy and resolve ties. The figure below shows an example of disinformation narratives analyzed by GPT-4o, highlighting confidence levels and reasoning. </p>
             </div>
 
             <div class="content has-text-justified">
@@ -337,11 +315,6 @@
               <p align="justified"> <b> <span>Figure</span></b>: Disinformation Trends Across News Categories generated by GPT-4o based on disinformation narratives and confidence levels. </p>
               </p>
             </div>
-
-            <!-- <h3 class="title is-4 has-text-justified">Benchmark</h3>
-              <p align="justify">
-                VLDBench evaluates the performance of LLMs and VLMs on disinformation detection tasks, focusing on text-only and multimodal analysis. The benchmarking process includes prompt-based evaluations and robustness testing to assess model performance.
-              </p> -->
           </div>
 
         </div>
@@ -350,8 +323,6 @@
       <div class="content has-text-centered">
         <h3 class="title is-4 has-text-justified">LLMs and VLMs used for Benchmarking</h3>
         <div class="content has-text-justified">
-          <p align="justify"> After annotation stage, we move to benchmarking where we evaluate ten state-of-the-art open-source VLMs and nine LLMs on VLDBench, evaluating LLMs on text-only tasks and VLMs on multimodal analysis (text + images). We focus on open-source LLMs and VLMs to promote accessibility and transparency in our research. The evaluation process includes both quantitative and qualitative assessments n both prompt-based and fine-tuned models </p>
-          <!-- I want width to be 80% center aligned-->
           <table style="width:80%" align="center">
             <tr>
                 <th>Language-Only LLMs</th>
@@ -416,27 +387,17 @@
         <div class="column is-full-width has-text-centered">
           <h2 class="title is-3">Experimental results on VLDBench</h2>
 
-          <div class="content has-text-justified">
-            <p> Our investigation focuses on three core ques404 tions: (1) Does multimodal (text+image) data improve
-              disinformation detection compared to text alone? (2) Does instruction-based fine tuning enhance
-              generalization and robustness? (3) How vulnerable are models to adversarial perturbations in text and
-              images? </p>
-          </div>
+          <!-- <h3 class="title is-4 has-text-justified">Multimodal Models Surpass Unimodal Baselines</h3> -->
 
-          <h3 class="title is-4 has-text-justified">Multimodal Models Surpass Unimodal Baselines</h3>
+          <!-- <div class="content has-text-centered"> -->
 
-          <div class="content has-text-centered">
-            <p style="text-align: justify;">
-              VLMs generally out perform language-only LLMs. For example, LLaMA-3.2-11B-Vision outperforms LLaMA 3.2-1B (text-only). Similarly, Phi, LLaVA, Pixtral, InternVL, DeepSeek-VL, and GLM360 4V perform better than their text-only counterparts. The performance gains between these two sets of models are quite pronounced. For instance, LLaVA-v1.5-Vicuna7B improves accuracy by 27% over its unimodal base (Vicuna-7B), highlighting the critical role of visual context. However, Qwen2-VL-7B marginally lags behind its text-only counterpart, suggesting that the effectiveness of modality integration can vary depending on the model’s architecture. While top LLMs remain competitive, VLMs excel in recall, a vital trait for minimizing missed disinformation in adversarial scenarios.</p>
             <!-- <img src="static/images/zero-shot_performance.png" style="max-width:100%"> -->
              <!-- <img src="static/images/radar_plot_page-0001.jpg" style="max-width:80%"> -->
             <!-- <p style="text-align: justify;"> <b> <span>Figure</span></b>: Performance comparison of vision language models for disinformation detection across key metrics: precision, recall, F1 and accuracy, with different colors representing distinct metrics </p> -->
-          </div>
+          <!-- </div> -->
           <!-- <br /> -->
-          <h3 class="title is-4 has-text-justified">Instruction Fine-Tuning Enhances Performance</h3>
+          <h3 class="title is-4 has-text-justified">Instruction Fine-Tuning on <b>VLDBench</b> Improves Detection Performance</h3>
           <div class="content has-text-centered">
-            <p style="text-align: justify;">
-              Instruction fine-tuning (IFT) on models like Phi, Mistral-Llava, Qwen, and Llama3.2—along with their vision-language counterparts—utilizing the training subset of VLDBench led to significant performance improvements across all models compared to their zero-shot capabilities. For instance, Phi-3-Vision-IFT achieved a 7% increase in F1 model over their zero-shot baselines. This enhancement is not solely due to better output formatting; rather, it reflects the model ability to adapt to and learn from disinformation-specific cues in the data.</p>
             <img src="static/images/ift.png" style="max-width:80%">
             <p style="text-align: justify;"> <span><b>Figure</b></span>: Comparison of zero-shot vs. instruction-fine-tuned (IFT) performance, with 95% confidence intervals computed from three independent runs. </p>
 
@@ -445,102 +406,54 @@
         </div>
       </div>
 
-      <h2 class="title is-3">Robustness to Adversarial Perturbations</h2>
-      <h3 class="title is-4 has-text-justified">Text and Image Attacks</h3>
+      <h3 class="title is-4 has-text-justified">Adversarial Robustness: Combined Modality is More Vulnerable</h3>
+      <!-- <h4 class="title is-4 has-text-justified">Text and Image Attacks</h4> -->
 
       <div class="content has-text-justified">
-        <p> We tested each model under controlled perturbations (zero-shot evaluation), including textual and image perturbations. Textual perturbations include synonym substitution, misspellings, and negations. Image perturbations (I-P) include blurring, gaussian noise, and resizing. We also include Multi modality attacks: cross-modal misalignment (C-M) (e.g., mismatched image captions) and both modality perturbations (B-P) (both text and image distortions). The following images are examples of various perturbations.</p>
         <div class="content has-text-centered">
-          <img src="static/images/perturbation_text_page-0001.jpg" style="max-width:65%">
-          <p style="text-align: justify;"> <b> <span>Figure</span></b>: We describe the text perturbations in the caption,
-            introducing Synonym, Misspelling, and Negation. Our analysis shows that text negation leads to a majority of
-            disinformation cases.</p>
+          <img src="static/images/perturbation_text_page-0001.jpg" style="max-width:50%">
+          <p style="text-align: justify;"> <b> <span>Figure</span></b>: Textual Perturbations. We describe three controlled text perturbations—<i>Synonym Substitution, Misspelling, and Negation</i>—and analyse how each distorts meaning. Our evaluation shows that text negation flips factual statements most often into disinformation, driving the largest drop in model accuracy</p>
         </div>
 
           
         <!-- <p>Image perturbations (I-P) include blurring, gaussian noise, and resizing. We also include Multi modality attacks: cross-modal misalignment (C-M) (e.g., mismatched image captions) and both modality perturbations (B-P) (both text and image distortions). The following image is an example of image, cross-modal, and both-modality perturbations.
         </p> -->
         <div class="content has-text-centered">
-          <img src="static/images/perturbation_image_page-0001.jpg" style="max-width:65%">
-          <p style="text-align: justify;"> <b> <span>Figure</span></b>: We describe the image perturbations in the caption, introducing Blur, Noise, and Resizing, Cross-Modal (C-M) Mismatch, Both-Modality (BM). Our analysis shows that C-M and B-M leads to a majority of disinformation cases.</p>
+          <img src="static/images/perturbation_image_page-0001.jpg" style="max-width:50%">
+          <p style="text-align: justify;"> <b> <span>Figure</span></b>: Visual Perturbations. We introduce five image attacks—<i>Gaussian Blur, Additive Noise, Resizing, Cross-Modal Mismatch (C-M), and Both-Modality (B-M)</i>—and report that the cross-modal and combined attacks cause the greatest misclassification under multimodal setting.</p>
         </div>
         
       </div>
      
 
       
-      <h3 class="title is-4 has-text-justified">Combined Attacks</h3>
 
-      <div class="content has-text-justified">
-        <p> Combining text+image adversarial attacks can cause catastrophic performance drops in high-capacity models. These findings illustrate that multimodal methods, despite generally higher baseline accuracy, remain susceptible when adversaries deliberately target both modalities.</p>
-      </div>
-      <!-- <div class="content has-text-centered">
-        <img src="static/images/VisualTransformations.png" style="max-width:100%">
-        <p style="text-align: justify;"> <b> <span>Figure</span></b>: Visual transformations and their impact on disinformation classification. Noise and downscaling can shift model outputs from “Yes” to “No.”</p>
-      </div> -->
+      <h3 class="title is-4 has-text-justified">Human Evaluation Demonstrates Reliability and Reasoning Depth</h3>
 
-      <h3 class="title is-4 has-text-justified">Human Evaluation Establishes Reliability and Reasoning Depth</h3>
-
-      <div class="content has-text-justified">
-        <p> We conducted a human evaluation of three IFT VLMs (LlaMA-3.2-11B, Pixtral, LLaVA-v1.6) on a balanced 500-sample test set (250 disinformation, 250 neutral). Each model classified samples and provided a rationale. Three independent reviewers, blinded to model identities, rated the outputs based on Prediction Correctness (PC) and Reasoning Clarity (RC), both on a scale of 1–5. The image below shows a representative example of model reasoning and highlights differences in explanatory quality.</p>
-      </div>
       <div class="content has-text-centered">
         <img src="static/images/reasoning_page-0001.jpg" style="max-width:80%">
-        <p style="text-align: justify;"> <b> <span>Figure</span></b>: Human evaluation results on a 500-sample test set. Models were tasked with classifying disinformation and justifying their predictions. PC = prediction correctness, RC = reasoning clarity (mean ± std.).</p>
+        <p style="text-align: justify;"> <b> <span>Figure</span></b>: Human evaluation results on a 500-sample test set. Models were tasked with classifying disinformation and justifying their predictions. <strong>PC</strong> = prediction correctness, <strong>RC</strong> = reasoning clarity (mean &plusmn; std.).
+        </p>
+      </div>
+
+      <h3 class="title is-4 has-text-justified">AI Risk Mitigation and Governance Alignment</h3>
+      <div class="content has-text-centered">
+        <img src="static/images/AIAlignment.jpg" style="max-width:70%">
+        <p style="text-align: justify;"> <b> <span>Figure</span></b>: Mapping of VLDBench components to risk mitigation strategies outlined in the AI MIT Risk and Responsibility Repository. Each pipeline component addresses specific risks related to privacy, misinformation, discrimination, robustness, and interpretability.
+        </p>
       </div>
 
       <div class="content has-text-justified">
         <h3 class="title is-4 has-text-justified">Conclusion</h3>
         <div class="content has-text-justified">
           <p>
-            VLDBench addresses the urgent challenge of disinformation through a design rooted in responsible data stewardship
-            and human-centered principles, integrating best practices to meet key AI governance requirements. Unlike other
-            benchmarks, VLDBench uniquely targets the complexity of disinformation in the post-ChatGPT era, where GenAI has
-            amplified a lot of false information. It is the first dataset explicitly designed to evaluate modern V/LLMs on
-            emerging disinformation challenges, maintaining a topical focus.
-            <br><br>
-            However, some limitations need attention. The reliance on pre-verified news sources introduces potential sampling
-            bias, and the annotation process, partially based on AI, may inherit some biases. There is also a need for more
-            research into adversarial attacks on multimodal performance. The current focus on English language only limits its applicability to multilingual and culturally diverse contexts. Despite these limitations, VLDBench represents an effort in benchmarking disinformation detection and opens venues for collaboration from researchers and practitioners to address this challenge.</p>
+            <b><i>VLDBench</i></b> addresses the urgent challenge of AI-era disinformation through responsible data stewardship, prioritizing human-centered design, ethical data sourcing, and governance-aligned evaluation (EU AI Act, NIST). Unlike existing benchmarks, it is the first to explicitly evaluate modern LLMs/ VLMs on disinformation topic, with 62k multimodal samples spanning 13 topical categories (e.g., sports, politics). While compatible with traditional ML models, its design focuses on emerging multimodal threats. Some limitations need discussion : (1) reliance on pre-verified news sources risks sampling bias, (2) hybrid AI-human annotations may inherit annotator biases, and (3) the English-only corpus limits multilingual applicability. Future work should expand to adversarial cross-modal attacks (e.g., deepfake text-image contradictions) and low-resource languages. Despite these constraints, <b><i>VLDBench</i></b> establishes a foundational step toward systematic disinformation benchmarking, enabling researchers to stress-test models agains real-world deception tactics while adhering to AI governance frameworks.</p>
           <br>
           <p>For additional details about VLDBench evaluation and experimental results, please refer to our main paper.
             Thank you! </p>
         </div>
-
-        <div class="columns is-centered">
-          <div class="column is-full-width has-text-centered">
-            <h2 class="title is-3">Social Statement</h2>
-          </div>
-        </div>
-        <div class="content has-text-justified">
-          <p> Disinformation threatens democratic institutions, public trust, and social cohesion. <b>Generative AI
-              exacerbates the problem</b> by enabling sophisticated multimodal campaigns that exploit cultural,
-            political, and linguistic nuances, requiring solutions beyond technical approaches. </p>
-          <p> <b>VLDBench</b> addresses this challenge as the first multimodal benchmark for disinformation detection,
-            combining text and image analysis with ethical safeguards. It prioritizes <b>cultural sensitivity</b>
-            through regional annotations and mitigates bias with audits and human-AI hybrid validation. Ground-truth
-            labels are sourced from fact-checked references with transparent provenance tracking. </p>
-          <p> As both a <b>technical resource</b> and a <b>catalyst for collaboration</b>, VLDBench democratizes
-            access to cutting-edge detection tools by open-sourcing its benchmark and models. It highlights systemic
-            risks, like adversarial attack vulnerabilities, to drive <b>safer and more reliable systems</b>. Designed
-            to foster partnerships across academia, industry, journalism, and policymaking, VLDBench bridges the gap
-            between research and real-world impact. </p>
-          <p> <b>Ethical risks</b> are carefully addressed through restricted access, exclusion of synthetic tools,
-            and human oversight requirements. Representation gaps in non-English content are documented to guide
-            future adaptations. Binding agreements prohibit harmful applications such as censorship, surveillance, or
-            targeted disinformation campaigns. </p>
-          <p> By focusing exclusively on disinformation detection, VLDBench supports <b>media literacy</b>, unbiased
-            fact-checking, and policy discussions on AI governance. Its <b>ethical design</b> and <b>equitable
-              access</b> empower communities and institutions to combat disinformation while fostering trust in
-            digital ecosystems. </p>
-        </div>
       </div>
     </div>
-
-
-
-      
-
   </section>
 
   <section class="section" id="BibTeX">

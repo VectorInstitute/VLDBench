@@ -2,24 +2,24 @@
 <!-- # **VLDBench: Vision Language Models Disinformation Detection Benchmark** -->
 
 <p align="center">
-  <img src="docs/static/images/architecture.png" alt="VLDBench Pipeline" width="70%">
+  <img src="docs/static/images/Framework.jpg" alt="VLDBench Pipeline" width="85%">
 </p>
 
 
 ## **Overview**
 With the increasing impact of **Generative AI** in shaping digital narratives, detecting **disinformation** has become more critical than ever. **VLDBench** is the **largest** and **most comprehensive** human-verified **multimodal disinformation detection benchmark**, designed to evaluate **Language Models (LLMs)** and **Vision-Language Models (VLMs)** on multimodal disinformation.
 
-🔹 **31,000+** News Article-Image Pairs  
+🔹 **62,000+** News Article-Image Pairs  
 🔹 **13 Unique News Categories**  
-🔹 **22 Domain Experts** | **300+ Hours of Human Verification**  
+🔹 **22 Domain Experts** | **500+ Hours of Human Verification**  
 🔹 **Multimodal Benchmarking** for Text and Image Disinformation Detection  
 
----
+
 
 ## 📜 **Paper (Preprint)**
 📄 [VLDBench: Vision Language Models Disinformation Detection Benchmark (arXiv)](https://arxiv.org/abs/2502.11361)
 
----
+
 
 ## 📊 **Dataset**
 🔗 [VLDBench on Hugging Face](https://huggingface.co/datasets/vector-institute/VLDBench)  
@@ -30,7 +30,7 @@ With the increasing impact of **Generative AI** in shaping digital narratives, d
 - **Unimodal (text-only) and Multimodal (text + image) classification**
 - **Benchmarking of top LLMs & VLMs**
 
----
+
 
 ## 🏆 **Benchmarking**
 We evaluate **19 state-of-the-art models**:
@@ -52,27 +52,16 @@ We evaluate **19 state-of-the-art models**:
 | LLaMA-3.2-1B-Instruct           | Deepseek Janus-Pro-7B            |
 | -                               | Pixtral                          |
 
-🔹 **Fine-Tuning Improves Accuracy:** IFT boosts model performance by up to **7%**  
-🔹 **Robustness Testing:** VLDBench evaluates **text & image perturbations** to identify **adversarial vulnerabilities**  
-🔹 **Human Evaluation:** Models were assessed on **prediction correctness** and **reasoning clarity**
 
----
-
-## 🛠 **Pipeline**
-### **Three-Stage Process**
-1. **Data Collection:** Curated from **58 diverse news sources**
-2. **Annotation:** AI-human **hybrid validation** ensures **high accuracy**
-3. **Benchmarking:** Evaluation of **state-of-the-art LLMs & VLMs**
-
-📌 **Multimodal (text+image) approaches outperform text-only models**  
-📌 **Adversarial robustness tests highlight vulnerabilities in disinformation detection**  
-
----
 
 ## 📌 **Key Findings**
-✅ **Multimodal models surpass unimodal baselines**  
-✅ **Fine-tuned models outperform zero-shot approaches**  
-✅ **Adversarial attacks significantly degrade model performance**  
+✅ **Multimodal Models Surpass Unimodal Baselines**  
+✅ **Instruction Fine-tuning on VLDBench Improves Detection Performance**  
+✅ **Adversarial Robustness: Combined Modality is More Vulnerable**  
+✅ **Scalability Improves Model Performance**
+✅ **Human Evaluation Demonstrates Reliability and Reasoning Depth**
+✅ **AI Risk Mitigation and Governance Alignment**
+
 
 
 ---
