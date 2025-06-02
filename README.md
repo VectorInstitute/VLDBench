@@ -1,5 +1,4 @@
-<h1 align="center"> VLDBench: <u>V</u>ision <u>L</u>anguage Models <u>D</u>isinformation Detection <u>Bench</u>mark</h1>
-<!-- # **VLDBench: Vision Language Models Disinformation Detection Benchmark** -->
+# **VLDBench**: Evaluating Multimodal Disinformation with Regulatory Alignment
 
 <p align="center">
   <img src="docs/static/images/Framework.jpg" alt="VLDBench Pipeline" width="85%">
@@ -17,7 +16,7 @@ With the increasing impact of **Generative AI** in shaping digital narratives, d
 
 
 ## 📜 **Paper (Preprint)**
-📄 [VLDBench: Vision Language Models Disinformation Detection Benchmark (arXiv)](https://arxiv.org/abs/2502.11361)
+📄 [VLDBench Evaluating Multimodal Disinformation with Regulatory Alignment (arXiv)](https://arxiv.org/abs/2502.11361)
 
 
 
@@ -70,8 +69,8 @@ We evaluate **19 state-of-the-art models**:
 If you use VLDBench in your research, please cite:
 
 ```bibtex
-@misc{raza2025vldbenchvisionlanguagemodels,
-      title={VLDBench: Vision Language Models Disinformation Detection Benchmark}, 
+@misc{raza2025vldbenchevaluatingmultimodaldisinformation,
+      title={VLDBench Evaluating Multimodal Disinformation with Regulatory Alignment}, 
       author={Shaina Raza and Ashmal Vayani and Aditya Jain and Aravind Narayanan and Vahid Reza Khazaie and Syed Raza Bashir and Elham Dolatabadi and Gias Uddin and Christos Emmanouilidis and Rizwan Qureshi and Mubarak Shah},
       year={2025},
       eprint={2502.11361},
