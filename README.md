@@ -1,4 +1,13 @@
-# **VLDBench**: Evaluating Multimodal Disinformation with Regulatory Alignment
+<div align="center">
+  <h1 style="font-weight: 600;">
+    <img src="docs/static/images/VLDBenchLogo.ico" alt="VLDBench Logo" style="height: 1.2em; vertical-align: middle; margin-right: 10px;">
+    <span style="vertical-align: middle;">VLDBench</span>
+    <br>
+    <span style="font-size: 0.6em; font-weight: 400;">
+      Evaluating Multimodal Disinformation with Regulatory Alignment
+    </span>
+  </h1>
+</div>
 
 <p align="center">
   <img src="docs/static/images/Framework.jpg" alt="VLDBench Pipeline" width="85%">
