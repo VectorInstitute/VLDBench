@@ -1,13 +1,16 @@
-<div align="center">
-  <h1 style="font-weight: 600;">
-    <img src="docs/static/images/VLDBenchLogo.ico" alt="VLDBench Logo" style="height: 1.2em; vertical-align: middle; margin-right: 10px;">
-    <span style="vertical-align: middle;">VLDBench</span>
-    <br>
-    <span style="font-size: 0.6em; font-weight: 400;">
-      Evaluating Multimodal Disinformation with Regulatory Alignment
-    </span>
-  </h1>
-</div>
+# VLDBench: Evaluating Multimodal Disinformation with Regulatory Alignment
+
+<p align="center">
+  <img src="docs/static/images/VLDBenchLogo.ico" alt="VLDBench Logo" width="100"/>
+</p>
+
+<p align="center">
+  <b>🌐 Website:</b> <a href="https://vectorinstitute.github.io/VLDBench/">vectorinstitute.github.io/VLDBench/</a>  
+  &nbsp;|&nbsp;
+  <b>📄 Paper:</b> <a href="https://www.arxiv.org/abs/2502.11361">arxiv.org/abs/2502.11361</a>  
+  &nbsp;|&nbsp;
+  <b>📊 Dataset:</b> <a href="https://huggingface.co/datasets/vector-institute/VLDBench">Hugging Face</a>
+</p>
 
 <p align="center">
   <img src="docs/static/images/Framework.jpg" alt="VLDBench Pipeline" width="85%">
