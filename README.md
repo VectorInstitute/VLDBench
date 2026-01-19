@@ -27,7 +27,7 @@ With the increasing impact of **Generative AI** in shaping digital narratives, d
 
 
 
-## 📜 **Paper **
+## 📜 **Paper** (Accepted at [Information Fusion Journal](https://www.sciencedirect.com/journal/information-fusion))
 📄 [VLDBench Evaluating multimodal disinformation with regulatory alignment](https://www.sciencedirect.com/science/article/abs/pii/S1566253525011546)
 
 
