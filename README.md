@@ -1,13 +1,13 @@
-# VLDBench: Evaluating Multimodal Disinformation with Regulatory Alignment
+# <u>VLDBench</u> Evaluating multimodal disinformation with regulatory alignment
 
 <p align="center">
   <img src="docs/static/images/VLDBenchLogo.ico" alt="VLDBench Logo" width="100"/>
 </p>
 
 <p align="center">
-  <b>🌐 Website:</b> <a href="https://vectorinstitute.github.io/VLDBench/">vectorinstitute.github.io/VLDBench/</a>  
+  <b>🌐 Website:</b> <a href="https://vectorinstitute.github.io/VLDBench/">Link</a>  
   &nbsp;|&nbsp;
-  <b>📄 Paper:</b> <a href="https://www.arxiv.org/abs/2502.11361">arxiv.org/abs/2502.11361</a>  
+  <b>📄 Paper:</b> <a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253525011546">Link</a>  
   &nbsp;|&nbsp;
   <b>📊 Dataset:</b> <a href="https://huggingface.co/datasets/vector-institute/VLDBench">Hugging Face</a>
 </p>
@@ -27,8 +27,8 @@ With the increasing impact of **Generative AI** in shaping digital narratives, d
 
 
 
-## 📜 **Paper (Preprint)**
-📄 [VLDBench Evaluating Multimodal Disinformation with Regulatory Alignment (arXiv)](https://arxiv.org/abs/2502.11361)
+## 📜 **Paper **
+📄 [VLDBench Evaluating multimodal disinformation with regulatory alignment](https://www.sciencedirect.com/science/article/abs/pii/S1566253525011546)
 
 
 
@@ -81,14 +81,17 @@ We evaluate **19 state-of-the-art models**:
 If you use VLDBench in your research, please cite:
 
 ```bibtex
-@misc{raza2025vldbenchevaluatingmultimodaldisinformation,
-      title={VLDBench Evaluating Multimodal Disinformation with Regulatory Alignment}, 
-      author={Shaina Raza and Ashmal Vayani and Aditya Jain and Aravind Narayanan and Vahid Reza Khazaie and Syed Raza Bashir and Elham Dolatabadi and Gias Uddin and Christos Emmanouilidis and Rizwan Qureshi and Mubarak Shah},
-      year={2025},
-      eprint={2502.11361},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2502.11361}, 
+@article{RAZA2026104092,
+title = {VLDBench Evaluating multimodal disinformation with regulatory alignment},
+journal = {Information Fusion},
+volume = {130},
+pages = {104092},
+year = {2026},
+issn = {1566-2535},
+doi = {https://doi.org/10.1016/j.inffus.2025.104092},
+url = {https://www.sciencedirect.com/science/article/pii/S1566253525011546},
+author = {Shaina Raza and Ashmal Vayani and Aditya Jain and Aravind Narayanan and Vahid Reza Khazaie and Syed Raza Bashir and Elham Dolatabadi and Gias Uddin and Christos Emmanouilidis and Rizwan Qureshi and Mubarak Shah},
+keywords = {Multimodal disinformation, Vision-language models, AI safety benchmark, Evaluation, AI governance compliance}
 }
 ```
 
